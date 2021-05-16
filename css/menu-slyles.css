@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap');
+.body{
+    margin: 0px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    width: 4em;
+}
+.main-menu img{
+    width: 4em;
+}
+.logo-container div{
+    font-family: 'Nunito', sans-serif;
+    color: #428FFF;
+    font-weight: bolder;
+}
+
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(194, 215, 253);
+}
+.list-menu{
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 4em;
+    right: 1em;
+    text-align: center;  
+    height: 100vh;
+    width: 40%;
+    border-radius:10px 0px 0px 0px ;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.list-menu li{
+    list-style: none;
+    margin-top: 2em;
+}
+.list-menu li a{
+    color: rgb(210, 231, 255);
+}
+.active-menu{
+  transform: translateX(0%); 
+}
+@media screen and (min-width:720px) and (orientation:landscape){
+    #menu-btn{
+        display:none;
+    }
+    .list-menu{
+        transform: translateX(0%);
+        position: static;
+        width: 100%;
+        height: auto;
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+    }
+}

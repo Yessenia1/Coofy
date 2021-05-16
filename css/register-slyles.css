@@ -1,0 +1,24 @@
+.terminos{
+    margin-top: 1em;
+    width: 90%;
+}
+.terminos input{
+    border: solid 1px #428FFF;
+
+}
+.back-btn{
+    margin-top: 1.5em;
+    width: 100%;
+    color: #428FFF;
+    font-weight: bolder;
+    font-size: 19px;
+    height: 4vh;
+    border-color: #5a8cff;
+   
+    border-radius: 1em;
+    text-decoration: none;
+}
+.login-btn{
+    width: 90%;
+}
+
